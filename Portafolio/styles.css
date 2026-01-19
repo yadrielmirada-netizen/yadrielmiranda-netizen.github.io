@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #dce6eb;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project {
+    background-color: #f4f6f8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    padding: 15px;
+    font-size: 1.4rem;
+    color: #203a43;
+}
+
+.project p {
+    padding: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #203a43;
+    color: white;
+    font-size: 0.9rem;
+}
